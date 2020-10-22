@@ -11,7 +11,7 @@ import SwiftUI
 struct DetailImageView: View {
     var flavorItem: FlavorItem = flavorOfMonthItem
     var body: some View {
-        Image("\(flavorItem.id)_Flavor")
+        Image(decorative: "\(flavorItem.id)_Flavor")
         .resizable()
         .scaledToFit()
         .shadow(color: .black, radius:15, x:5, y:5)

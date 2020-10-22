@@ -22,6 +22,7 @@ struct DetailRatingsView: View {
                     .blur(radius: 5.0)
             }
         }
+        .accessibility(value: Text("\(count)"))
     }
 
 }

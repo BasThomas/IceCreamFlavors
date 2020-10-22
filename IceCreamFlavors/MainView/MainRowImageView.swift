@@ -11,9 +11,10 @@ import SwiftUI
 struct MainRowImageView: View {
     var flavorItem: FlavorItem = flavorOfMonthItem
     var body: some View {
-        Image("\(flavorItem.id)_Flavor_100w")
         .scaledToFit()
         //.shadow(color: .black, radius:10, x:5, y:5)
+        Image(decorative: "\(flavorItem.id)_Flavor_100w")
+            .scaledToFit()
     }
 }
 

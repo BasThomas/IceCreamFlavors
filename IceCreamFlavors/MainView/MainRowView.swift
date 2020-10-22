@@ -19,6 +19,9 @@ struct MainRowView: View {
             }
             //Spacer()    
         }
+        .accessibility(label: Text("\(flavorItem.name)"))
+        .accessibility(value: Text("\(flavorItem.count) stars"))
+        .accessibility(inputLabels: [Text("Ice Cream")])
     }
 }
 
